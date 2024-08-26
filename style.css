@@ -1,36 +1,56 @@
 body{
-    background-image: url("imagenes/opcion2.png");
+    background-image: url("imagenes/opcion3.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-header{
+.body2{
+    background-image: url("imagenes/opcion1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+header {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    nav a{
-        display: flex;
-        flex-direction: row;
-        background-color: rgba(236, 193, 147, 0.635);
-        padding: 12px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: large;
-        color: rgb(94, 57, 26);  
-        &:hover{
-            background-color: rgb(126, 69, 34);
-            color: blanchedalmond;
-        } 
-    }
+    justify-content: flex-start; 
+    align-items: center; 
+    position: relative;
+    gap: 75px; 
+    padding: 10px; 
+}
 
-    div img{
-        width: 40px;
-        height: auto;
-    }
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+}
+
+nav a {
+    background-color: rgba(236, 193, 147, 0.635);
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: large;
+    color: rgb(94, 57, 26);  
+}
+
+nav a:hover {
+    background-color: rgb(126, 69, 34);
+    color: blanchedalmond;
+}
+
+div img {
+    width: 40px;
+    height: auto;
 }
 
 main{
+    background-color: rgba(247, 211, 203, 0.58);
+    padding: 30px;
+    border-radius: 10px;
     color: rgb(92, 57, 37);
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
@@ -40,11 +60,11 @@ main{
     text-align: left;
     gap: 10px;
     position: relative;
-    top: 100px; 
+    top: 60px; 
     left: 60px;
 
     h1 {
-        margin-bottom: 10px; 
+        margin-bottom:20px; 
         font-size: 40px; 
         font-weight: bold; 
     }
@@ -54,5 +74,85 @@ main{
         font-size: 25px; 
         font-weight: normal; 
     }
- 
+}
+
+.horarios{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-pag2{
+    background-color: rgba(120, 58, 32, 0.509);
+    padding: 30px;
+    color: white;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 150px;
+    margin-right: 150px;
+    gap: 10px;
+    font-weight: bold; 
+    h1 {
+        font-size: 40px; 
+    }
+}
+
+button{
+    background-color: rgba(236, 193, 147, 0.635);
+    padding: 12px;
+    border-radius: 5px;
+    border-color: rgba(236, 193, 147, 0.635);
+    text-decoration: none;
+    font-size: small;
+    color: rgb(94, 57, 26);  
+}
+
+button:hover {
+    background-color: rgb(126, 69, 34);
+    color: blanchedalmond;
+}
+
+.boton-inicio{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 500px;
+    top: 10px;
+}
+
+footer {
+    background-color: rgb(92, 57, 37);
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    padding: 20px; 
+    height: 127px; 
+    width: 100%;
+    box-sizing: border-box; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    margin: 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    text-align: left; 
+    position: relative;
+    right: 50px;
+}
+
+footer h1 {
+    margin: 0 0 10px 0; 
+    font-size: 20px; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 14px; 
 }

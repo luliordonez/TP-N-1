@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva en la Cafetería</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body2">
+    <header>
+        <nav class="boton-inicio">
+        <a href="index.html">Volver a inicio</a>
+    </nav>
+    </header>
+    <main class="main-pag2">
+    <h1>Reserva en Infinita</h1>
+    <form id="reservationForm">
+        <div>Nombre:
+        <input type="text" id="name" name="name" required><br><br>
+    </div>
+        
+        <div>Correo Electrónico:
+        <input type="email" id="email" name="email" required><br><br>
+    </div>
+
+        <div>Teléfono:
+        <input type="tel" id="phone" name="phone" required><br><br>
+    </div>
+
+        <div>Fecha de la Reserva:
+        <input type="date" id="date" name="date" required><br><br>
+    </div>
+
+        <div>Hora de la Reserva:
+        <input type="time" id="time" name="time" required><br><br>
+    </div>
+
+        <div>Número de Personas:
+        <input type="number" id="people" name="people" required><br><br>
+    </div>
+
+        <button type="submit">Reservar</button>
+    </form>
+
+    <div id="confirmation" style="display:none;">
+        <h2>¡Reserva confirmada!</h2>
+        <p id="confirmationMessage"></p>
+    </div>
+</main>
+
+<script src="index.js"></script>
+
+</body>
+</html>
